@@ -68,3 +68,19 @@ Running migrations:
     (ll_env)learning_log$ ls
     db.sqlite3 learning_log ll_env manage.py
      
+
+## Viewing the Project
+Let’s make sure that Django has set up the project properly. Enter the runserver command as follows to view the project 
+in its current state:
+    
+    (ll_env) leslierodriguez@Leslies-MacBook-Pro Learning-Log % python3 manage.py runserver
+    Watching for file changes with StatReloader
+    Performing system checks...
+
+    System check identified no issues (0 silenced).
+    February 08, 2021 - 03:14:34
+    Django version 3.1.6, using settings 'learning_log.settings'
+    Starting development server at http://127.0.0.1:8000/
+    Quit the server with CONTROL-C.
+
+    
