@@ -81,7 +81,7 @@ Running migrations:
 Let’s make sure that Django has set up the project properly. Enter the runserver command as follows to view the project 
 in its current state:
     
-    (ll_env) leslierodriguez@Leslies-MacBook-Pro Learning-Log % python3 manage.py runserver
+    (ll_env)learning-Log % python manage.py runserver
     Watching for file changes with StatReloader
     Performing system checks...
 
@@ -90,5 +90,10 @@ in its current state:
     Django version 3.1.6, using settings 'learning_log.settings'
     Starting development server at http://127.0.0.1:8000/
     Quit the server with CONTROL-C. 
+
+Open a web browser and enter the URL http://localhost:8000/, or http:// 127.0.0.1:8000/ if the first one doesn’t work. 
+You should see something like Figure 18-1, a page that Django creates to let you know all is working properly so far. 
+Keep the server running for now, but when you want to stop the server, press cTrL-C in the terminal where the runserver 
+command was issued.
 
     
