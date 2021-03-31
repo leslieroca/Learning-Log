@@ -1,13 +1,13 @@
 # Learning Log
 
 Web app called Learning Log that allows users to log the topics they’re interested in and to make journal entries as 
-they learn about each topic. The Learning Log home page describes the site and invites users to either register or log in. 
+they learn about each topic. The Learning Log home page describes the site and invites users to either register or log-in. 
 Once logged in, a user can create new topics, add new entries, and read and edit existing entries.
 
 ## Creating a Virtual Environment
 To work with Django, we’ll first set up a virtual environment. A virtual environment is a place on your system where 
 you can install packages and isolate them from all other Python packages. Separating one project’s libraries from other 
-projects is beneficial and will be necessary when we deploy Learning Log to a server in Chapter 20.
+projects is beneficial and will be necessary when we deploy Learning Log to a server.
 Create a new directory for your project called learning_log, switch to that directory in a terminal, and enter the 
 following code to create a virtual environment:
 
@@ -19,11 +19,18 @@ following code to create a virtual environment:
 Now we need to activate the virtual environment using the following command:
 
     learning_log$ source ll_env/bin/activate
-    (ll_env)learning_log$
+    
+    you will see : (ll_env)learning_log$
 
-NOTE: If you’re using Windows, use the command ll_env\Scripts\activate (without the word source) to activate the virtual 
-environment. If you’re using PowerShell, you might need to capitalize Activate.
+NOTE: If you’re using Windows, use the command ll_env\Scripts\activate (without the word "source") to activate the virtual 
+environment. If you’re using PowerShell, you might need to capitalize "Activate".
 
+### To stop using a virtual environment, enter "deactivate":
+    
+    (ll_env)learning_log$ deactivate
+
+    you will see : learning_log$
+    
 
 ## Installing Django
 
@@ -56,6 +63,7 @@ environment. If you’re using PowerShell, you might need to capitalize Activate
     (ll_env)learning_log$ python3 manage.py migrate 
 
 Operations to perform:
+    
     Apply all migrations: admin, auth, contenttypes, sessions
 
 Running migrations:
@@ -81,6 +89,6 @@ in its current state:
     February 08, 2021 - 03:14:34
     Django version 3.1.6, using settings 'learning_log.settings'
     Starting development server at http://127.0.0.1:8000/
-    Quit the server with CONTROL-C.
+    Quit the server with CONTROL-C. 
 
     
