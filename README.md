@@ -8,7 +8,7 @@ Once logged in, a user can create new topics, add new entries, and read and edit
 To work with Django, we’ll first set up a virtual environment. A virtual environment is a place on your system where 
 you can install packages and isolate them from all other Python packages. Separating one project’s libraries from other 
 projects is beneficial and will be necessary when we deploy Learning Log to a server.
-Create a new directory for your project called learning_log, switch to that directory in a terminal, and enter the 
+Create a new directory for the project called learning_log, switch to that directory in a terminal, and enter the 
 following code to create a virtual environment:
 
     learning_log$ python3 -m venv ll_env 
@@ -16,7 +16,7 @@ following code to create a virtual environment:
 
 
 ### Activating the Virtual Environment
-Now we need to activate the virtual environment using the following command:
+Now we activate the virtual environment using the following command:
 
     learning_log$ source ll_env/bin/activate
     
@@ -96,4 +96,21 @@ You should see something like Figure 18-1, a page that Django creates to let you
 Keep the server running for now, but when you want to stop the server, press cTrL-C in the terminal where the runserver 
 command was issued.
 
+# Starting an App
+
+leave the development server running in the terminal window you opened earlier. Open a new terminal window (or tab), 
+and navigate to the directory that contains manage.py. Activate the virtual environment, and then run the startapp 
+command:
     
+    learning_log$ source ll_env/bin/activate
+    (ll_env)learning_log$ python manage.py startapp learning_logs 
+    (ll_env)learning_log$ ls
+    db.sqlite3 learning_log learning_logs ll_env manage.py
+    (ll_env)learning_log$ ls learning_logs/
+    __init__.py  admin.py  apps.py  migrations  models.py  tests.py  views.py
+
+The command startapp appname tells Django to create the infrastructure needed to build an app.
+In the project directory now, we will have a new folder called learning_logs.
+Django has created __init__.py , admin.py , apps.py , migrations , models.py , tests.py , views.py files. 
+The most important files are models.py, admin.py, and views.py. We’ll use models.py to define the data we want to 
+manage in our app. 
