@@ -62,22 +62,22 @@ environment. If you’re using PowerShell, you might need to capitalize "Activat
 
     (ll_env)learning_log$ python3 manage.py migrate 
 
-Operations to perform:
-    
-    Apply all migrations: admin, auth, contenttypes, sessions
+    Operations to perform:
+        Apply all migrations: admin, auth, contenttypes, sessions
 
-Running migrations:
-
-    Applying contenttypes.0001_initial... OK
-    Applying auth.0001_initial... OK
-    --snip--
-    Applying sessions.0001_initial... OK
+    Running migrations:
+        Applying contenttypes.0001_initial... OK
+        Applying auth.0001_initial... OK
+        --snip--
+        Applying sessions.0001_initial... OK
 
     (ll_env)learning_log$ ls
     db.sqlite3 learning_log ll_env manage.py
      
 
 ## Viewing the Project
+
+Run Server:
 Let’s make sure that Django has set up the project properly. Enter the runserver command as follows to view the project 
 in its current state:
     
@@ -95,6 +95,7 @@ Open a web browser and enter the URL http://localhost:8000/, or http:// 127.0.0.
 You should see something like Figure 18-1, a page that Django creates to let you know all is working properly so far. 
 Keep the server running for now, but when you want to stop the server, press cTrL-C in the terminal where the runserver 
 command was issued.
+
 
 # Starting an App
 
